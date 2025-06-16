@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  api:
+    container_name: kubenews-api-homol
+    build:
+      context: ../src
+      dockerfile: ../.devcontainer/Dockerfile.dev
+    environment:
+      NODE_ENV: homol
+    ports:
+      - "${PORT_API_LOCAL:-3333}:${PORT_API_EXPOSE:-3333}"
+    volumes:
+      - ../src:/app
+    command: ["npm", "run", "start"]

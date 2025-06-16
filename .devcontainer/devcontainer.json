@@ -1,7 +1,7 @@
 {
-  "name": "Kube News DevContainer",
+  "name": "Kube News Homologation DevContainer",
   "dockerComposeFile": [
-    "docker-compose.yml"
+    "docker-compose.override.yml"
   ],
   "service": "api",
   "workspaceFolder": "/app",

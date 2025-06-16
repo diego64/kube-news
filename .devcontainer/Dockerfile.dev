@@ -6,6 +6,10 @@ RUN apk add --no-cache \
     make \
     g++ \
     git
+COPY package*.json ./
+RUN npm install
+RUN npm install -g nodemon
+COPY . .
 USER node
 EXPOSE 3333
-CMD ["npm", "start"]
+CMD ["nodemon", "--legacy-watch", "index.js"]
