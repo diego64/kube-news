@@ -12,7 +12,7 @@ Para resolver isso, será necessário separar os ambientes, criando uma estrutur
 
 ---
 
-## 🏷️ Missão
+## 💥 Missão
 
 - [x] Criar dois Dockerfiles distintos:
    .devcontainer/Dockerfile.dev → Contendo ferramentas de desenvolvimento, como hot reload.
